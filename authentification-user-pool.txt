@@ -1,0 +1,19 @@
+OSX 
+-------
+apig-test \
+--username='USER_EMAIL' \
+--password='USER_PASSWORD' \
+--user-pool-id='YOUR_COGNITO_USER_POOL_ID' \
+--app-client-id='YOUR_COGNITO_APP_CLIENT_ID' \
+--cognito-region='YOUR_COGNITO_REGION' \
+--identity-pool-id='YOUR_IDENTITY_POOL_ID' \
+--invoke-url='YOUR_API_GATEWAY_URL' \
+--api-gateway-region='YOUR_API_GATEWAY_REGION' \
+--path-template='/photos' \
+--method='POST' \
+--body='{"description":"hello world","photo":"hello.jpg"}'
+
+
+WINDOWS 
+-------
+apig-test --username USER_EMAIL --password USER_PASSWORD --user-pool-id YOUR_COGNITO_USER_POOL_ID --app-client-id YOUR_COGNITO_APP_CLIENT_ID --cognito-region YOUR_COGNITO_REGION --identity-pool-id YOUR_IDENTITY_POOL_ID --invoke-url YOUR_API_GATEWAY_URL --api-gateway-region YOUR_API_GATEWAY_REGION --path-template /photos --method POST --body "{\"description\":\"hello world\",\"photo\":\"hello.jpg\"}"
